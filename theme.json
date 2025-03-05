@@ -1,0 +1,399 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "settings": {
+        "appearanceTools": true,
+        "color": {
+            "defaultPalette": false,
+            "palette": [
+                {
+                    "name": "Black",
+                    "slug": "black",
+                    "color": "#242424"
+                },
+                {
+                    "name": "Dark Grey",
+                    "slug": "dark-grey",
+                    "color": "#6B6B6B"
+                },
+                {
+                    "name": "Grey",
+                    "slug": "grey",
+                    "color": "#E5E5E5"
+                },
+                {
+                    "name": "Light Grey",
+                    "slug": "light-grey",
+                    "color": "#F9F9F9"
+                }
+            ]
+        },
+        "layout": {
+            "contentSize": "680px",
+            "wideSize": "1200px"
+        },
+        "spacing": {
+            "defaultSpacingSizes": false,
+            "spacingSizes": [
+                {
+                    "name": "X-Small",
+                    "slug": "xs",
+                    "size": "0.75rem"
+                },
+                {
+                    "name": "Small",
+                    "slug": "s",
+                    "size": "1rem"
+                },
+                {
+                    "name": "Medium",
+                    "slug": "m",
+                    "size": "1.5rem"
+                },
+                {
+                    "name": "Large",
+                    "slug": "l",
+                    "size": "2rem"
+                },
+                {
+                    "name": "X-Large",
+                    "slug": "xl",
+                    "size": "3rem"
+                }
+            ]
+        },
+        "typography": {
+            "defaultFontSizes": false,
+            "fontFamilies": [
+                {
+                    "fontFamily": "\"Merriweather\"",
+                    "name": "Merriweather",
+                    "slug": "merriweather",
+                    "fontFace": [
+                        {
+                            "fontFamily": "\"Merriweather\"",
+                            "fontWeight": "300",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/Merriweather-Light.woff",
+                                "file:./assets/fonts/Merriweather-Light.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "\"Merriweather\"",
+                            "fontWeight": "300",
+                            "fontStyle": "italic",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/Merriweather-LightItalic.woff",
+                                "file:./assets/fonts/Merriweather-LightItalic.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "\"Merriweather\"",
+                            "fontWeight": "400",
+                            "fontStyle": "italic",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/Merriweather-Italic.woff",
+                                "file:./assets/fonts/Merriweather-Italic.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "\"Merriweather\"",
+                            "fontWeight": "700",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/Merriweather-Bold.woff",
+                                "file:./assets/fonts/Merriweather-Bold.woff2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fontFamily": "\"Inter\"",
+                    "name": "Inter",
+                    "slug": "inter",
+                    "fontFace": [
+                        {
+                            "fontFamily": "\"Inter\"",
+                            "fontWeight": "400",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/Inter-Regular.woff",
+                                "file:./assets/fonts/Inter-Regular.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "\"Inter\"",
+                            "fontWeight": "700",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/Inter-Bold.woff",
+                                "file:./assets/fonts/Inter-Bold.woff2"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "fontFamily": "\"Source Code Pro\"",
+                    "name": "Source Code Pro",
+                    "slug": "source-code-pro",
+                    "fontFace": [
+                        {
+                            "fontFamily": "\"Source Code Pro\"",
+                            "fontWeight": "400",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/SourceCodePro-Regular.woff",
+                                "file:./assets/fonts/SourceCodePro-Regular.woff2"
+                            ]
+                        },
+                        {
+                            "fontFamily": "\"Source Code Pro\"",
+                            "fontWeight": "700",
+                            "fontStyle": "normal",
+                            "fontStretch": "normal",
+                            "src": [
+                                "file:./assets/fonts/SourceCodePro-Bold.woff",
+                                "file:./assets/fonts/SourceCodePro-Bold.woff2"
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "fontSizes": [
+                {
+                    "name": "Small",
+                    "slug": "s",
+                    "size": "1rem"
+                },
+                {
+                    "name": "Medium",
+                    "slug": "m",
+                    "size": "1.125rem"
+                },
+                {
+                    "name": "Large",
+                    "slug": "l",
+                    "size": "1.5rem"
+                },
+                {
+                    "name": "X-Large",
+                    "slug": "xl",
+                    "size": "2.5rem"
+                }
+            ]
+        }
+    },
+    "styles": {
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--merriweather)",
+            "fontSize": "var(--wp--preset--font-size--m)",
+            "lineHeight": "1.6"
+        },
+        "blocks": {
+            "core/heading":{
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--inter)",
+                    "fontWeight": "700"
+                },
+                "spacing": {
+                    "margin": {
+                        "top": "0",
+                        "bottom": "var(--wp--preset--spacing--m)"
+                    }
+                }
+            },
+            "core/paragraph": {
+                "spacing": {
+                    "margin": {
+                        "top": "0",
+                        "bottom": "var(--wp--preset--spacing--l)"
+                    }
+                },
+                "elements": {
+                    "link": {
+                        "typography": {
+                            "textDecoration": "underline"
+                        }
+                    }
+                }
+            },
+            "core/list": {
+                "spacing": {
+                    "margin": {
+                        "top": "0",
+                        "bottom": "var(--wp--preset--spacing--l)"
+                    }
+                }
+            },
+            "core/code": {
+                "color": {
+                    "background": "#F9F9F9"
+                },
+                "border": {
+                    "color": "#E5E5E5",
+                    "width": "1px",
+                    "style": "solid",
+                    "radius": "4px"
+                },
+                "spacing": {
+                    "padding": {
+                        "top": "var(--wp--preset--spacing--l)",
+                        "bottom": "var(--wp--preset--spacing--l)",
+                        "left": "var(--wp--preset--spacing--l)",
+                        "right": "var(--wp--preset--spacing--l)"
+                    },
+                    "margin": {
+                        "bottom": "var(--wp--preset--spacing--l)"
+                    }
+                },
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--s)",
+                    "fontFamily": "var(--wp--preset--font-family--source-code-pro)"
+                }
+            },
+            "core/quote": {
+                "typography": {
+                    "fontWeight": "300",
+                    "fontStyle": "italic"
+                },
+                "spacing": {
+                    "margin": {
+                        "top": "var(--wp--preset--spacing--l)",
+                        "bottom": "var(--wp--preset--spacing--l)",
+                        "left": "0",
+                        "right": "0"
+                    },
+                    "padding": {
+                        "left": "var(--wp--preset--spacing--m)",
+                        "top": "var(--wp--preset--spacing--s)",
+                        "bottom": "var(--wp--preset--spacing--s)"
+                    }
+                },
+                "border": {
+                    "left": {
+                        "width": "3px",
+                        "color": "var(--wp--preset--color--black)",
+                        "style": "solid"
+                    }
+                },
+                "css": ".wp-block-quote{position: relative; left: -24px; width: calc(100% + 24px)}"
+            },
+            "core/navigation-link": {
+                "typography": {
+                    "fontSize": "0.8125rem",
+                    "fontFamily": "var(--wp--preset--font-family--inter)",
+                    "fontWeight": "400"
+                },
+                "color": {
+                    "text": "#6B6B6B"
+                }
+            },
+            "core/post-title": {
+                "spacing": {
+                    "margin": {
+                        "top": "0",
+                        "bottom": "var(--wp--preset--spacing--l)"
+                    }
+                }
+            },
+            "core/post-terms": {
+                "color": {
+                    "text": "var(--wp--preset--color--dark-grey)"
+                },
+                "elements": {
+                    "link": {
+                        "typography": {
+                            "textDecoration": "none"
+                        }
+                    }
+                }
+            },
+            "core/post-content": {
+                "spacing": {
+                    "margin": {
+                        "top": "0"
+                    }
+                }
+            },
+            "core/post-excerpt": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--s)"
+                },
+                "spacing": {
+                    "margin": {
+                        "top": "0"
+                    }
+                }
+            },
+            "core/table": {
+                "spacing": {
+                    "margin": {
+                        "bottom": "var(--wp--preset--spacing--l)"
+                    }
+                }
+            },
+            "core/image": {
+                "spacing": {
+                    "margin": {
+                        "bottom": "var(--wp--preset--spacing--l)"
+                    }
+                }
+            },
+            "core/post-author-name": {
+                "elements": {
+                    "link": {
+                        "typography": {
+                            "textDecoration": "none"
+                        },
+                        ":hover": {
+                            "typography": {
+                                "textDecoration": "underline"
+                            }
+                        }
+                    }
+                }
+            },
+            "thewildblocks/comments-count": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--inter)",
+                    "fontSize": "var(--wp--preset--font-size--s)"
+                },
+                "color": {
+                    "text": "var(--wp--preset--color--dark-grey)"
+                }
+            }
+        },
+        "elements": {
+            "heading": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--inter)",
+                    "lineHeight": "1.2"
+                }
+            },
+            "h1": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--xl)"
+                }
+            },
+            "h2": {
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--l)"
+                }
+            },
+            "link": {
+                "color": {
+                    "text": "inherit"
+                }
+            }
+        },
+        "css": ":root *:last-child:not(.wp-block-post-title){margin-bottom: 0}"
+    }
+}
